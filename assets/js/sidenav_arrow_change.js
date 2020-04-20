@@ -1,0 +1,32 @@
+/* allows resize when window width changes */
+/*global $ */
+/*global document: false */
+/*global window: false */
+/*jslint white: true */
+
+$(document).ready(function() {
+    "use strict";
+    if ($(window).width() < 993) {
+        $(".arrow").text("keyboard_arrow_down");
+        $("#github-text").removeClass('menutiptext');
+        $("#github-text").addClass('menutiptext-right');
+    }
+    else {
+        $(".arrow").text("keyboard_arrow_right");
+        $("#github-text").addClass('menutiptext');
+        $("#github-text").removeClass('menutiptext-right');
+    }
+    $(window).resize(function() {
+
+        if ($(window).width() < 993) {
+            $(".arrow").text("keyboard_arrow_down");
+            $("#github-text").removeClass('menutiptext');
+            $("#github-text").addClass('menutiptext-right');
+        }
+        else {
+            $(".arrow").text("keyboard_arrow_right");
+            $("#github-text").addClass('menutiptext');
+            $("#github-text").removeClass('menutiptext-right');
+        }
+    });
+});
