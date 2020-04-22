@@ -2,7 +2,7 @@
 
 body {
     font-family: Ubuntu, sans-serif;
-    display: -ms-flex;
+    display: -ms-flexbox;
     display: flex;
     min-height: 100vh;
     -ms-flex-direction: column;
@@ -10,13 +10,13 @@ body {
 }
 
 .page-background {
-    background-color: #13334c;
+    background-color: #003246;
 }
 
 /* background color gradient - follows scale of each container in the materialize row */
 
 .main-background-gradient {
-    background: linear-gradient(to right, #005792 16.599999%, #fff 0)
+    background: linear-gradient(to right, #0387B1 16.599999%, #fff 0)
 }
 
 /* main and section */
@@ -34,7 +34,7 @@ section {
 /* link mods */
 
 a {
-    color: #005792;
+    color: #0387B1;
 }
 
 a:hover {
@@ -44,7 +44,7 @@ a:hover {
 /* Colours */
 
 .blue {
-    background-color: #005792 !important;
+    background-color: #0387B1 !important;
 }
 
 .blue-grey {
@@ -52,7 +52,7 @@ a:hover {
 }
 
 .blue-grey.to-blue {
-    background-color: #005792 !important;
+    background-color: #0387B1 !important;
 }
 
 .orange {
@@ -316,7 +316,6 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 /* navbar adjustments */
 
 .nav-bar {
-    -webkit-box-shadow: 0 -1px 0 1px rgba(0, 0, 0, 0.14);
     box-shadow: 0 -1px 0 1px rgba(0, 0, 0, 0.14);
 }
 
@@ -504,7 +503,7 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 
 @media only screen and (min-width:20px) {
     .main-background-gradient {
-        background: linear-gradient(to bottom, #005792 55%, #fff 0)
+        background: linear-gradient(to bottom, #0387B1 55%, #fff 0)
     }
 
     .menu-item {
@@ -514,7 +513,7 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 
 @media only screen and (min-width:601px) {
     .main-background-gradient {
-        background: linear-gradient(to bottom, #005792 40%, #fff 0)
+        background: linear-gradient(to bottom, #0387B1 40%, #fff 0)
     }
 
     .row .col.m2 {
@@ -550,11 +549,11 @@ textarea.materialize-textarea:focus:not([readonly])+label {
     }
 
     .border-dark {
-        border-bottom: 1px solid #005792;
+        border-bottom: 1px solid #0387B1;
     }
 
     .border-dark-right {
-        border-right: 1px solid #005792;
+        border-right: 1px solid #0387B1;
     }
 
     .bottom-border {
@@ -564,7 +563,7 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 
 @media only screen and (min-width:768px) {
     .main-background-gradient {
-        background: linear-gradient(to bottom, #005792 40%, #fff 0)
+        background: linear-gradient(to bottom, #0387B1 40%, #fff 0)
     }
 
 }
@@ -586,14 +585,14 @@ textarea.materialize-textarea:focus:not([readonly])+label {
         width: 14.9999%
     }
     .main-background-gradient {
-        background: linear-gradient(to right, #005792 25%, #fff 0)
+        background: linear-gradient(to right, #0387B1 25%, #fff 0)
     }
 
 }
 
 @media only screen and (min-width:1201px) {
     .main-background-gradient {
-        background: linear-gradient(to right, #005792 25%, #fff 0)
+        background: linear-gradient(to right, #0387B1 25%, #fff 0)
     }
 
     .row .col.xl2 {
@@ -618,7 +617,7 @@ textarea.materialize-textarea:focus:not([readonly])+label {
         width: 15.99%
     }
     .main-background-gradient {
-        background: linear-gradient(to right, #005792 20%, #fff 0)
+        background: linear-gradient(to right, #0387B1 20%, #fff 0)
     }
 
 }
@@ -634,7 +633,7 @@ textarea.materialize-textarea:focus:not([readonly])+label {
         width: 16.599%
     }
     .main-background-gradient {
-        background: linear-gradient(to right, #005792 17%, #fff 0)
+        background: linear-gradient(to right, #0387B1 17%, #fff 0)
     }
 
 }
@@ -650,7 +649,7 @@ textarea.materialize-textarea:focus:not([readonly])+label {
         width: 17%
     }
     .main-background-gradient {
-        background: linear-gradient(to right, #005792 15%, #fff 0)
+        background: linear-gradient(to right, #0387B1 15%, #fff 0)
     }
 }
 
@@ -665,7 +664,7 @@ textarea.materialize-textarea:focus:not([readonly])+label {
         width: 17.799%
     }
     .main-background-gradient {
-        background: linear-gradient(to right, #005792 11%, #fff 0)
+        background: linear-gradient(to right, #0387B1 11%, #fff 0)
     }
 
 }
