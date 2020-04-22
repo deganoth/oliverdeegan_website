@@ -1,4 +1,4 @@
-/* main body section reveals on navigation */
+/* main, section and sidenav reveals and navbar style change on navigation */
 /*global $ */
 /*global document: false */
 /*jslint white: true */
@@ -7,80 +7,81 @@ $(document).ready(function() {
     "use strict";
     $('#home-button').on('click', function() {
         $('#home').show(40, function() {
+            $('#home-button').addClass('to-blue');
+            $('#resume-button').removeClass('to-blue');
+            $('#code-button').removeClass('to-blue');
+            $('#interests-button').removeClass('to-blue');
+            $('#contact-form-button').removeClass('to-blue');
             $('#code').hide(1);
             $('#resume').hide(1);
             $('#interests').hide(1);
             $('#contact-form').hide(1);
             $('#thank-you').hide(1);
             $('#error').hide(1);
-            $('#home').addClass('index-background-gradient');
-            $('#resume').removeClass('resume-background-gradient', 100);
-            $('#interests').removeClass('interests-background-gradient', 100);
-            $('#code').removeClass('code-background-gradient', 100);
-            $('#contact-form').removeClass('contact-form-background-gradient', 100);
         });
     });
 
     $('#resume-button').on('click', function() {
         $('#resume').show(40, function() {
+            $('#home-button').removeClass('to-blue');
+            $('#resume-button').addClass('to-blue');
+            $('#code-button').removeClass('to-blue');
+            $('#interests-button').removeClass('to-blue');
+            $('#contact-form-button').removeClass('to-blue');
             $('#home').hide(1);
             $('#code').hide(1);
             $('#interests').hide(1);
             $('#contact-form').hide(1);
             $('#thank-you').hide(1);
             $('#error').hide(1);
-            $('#resume').addClass('resume-background-gradient');
-            $('#home').removeClass('index-background-gradient', 100);
-            $('#interests').removeClass('interests-background-gradient', 100);
-            $('#code').removeClass('code-background-gradient', 100);
-            $('#contact-form').removeClass('contact-form-background-gradient', 100);
         });
     });
 
     $('#interests-button').on('click', function() {
         $('#interests').show(40, function() {
+            $('#home-button').removeClass('to-blue');
+            $('#resume-button').removeClass('to-blue');
+            $('#code-button').removeClass('to-blue');
+            $('#interests-button').addClass('to-blue');
+            $('#contact-form-button').removeClass('to-blue');
             $('#home').hide(1);
             $('#resume').hide(1);
             $('#code').hide(1);
             $('#contact-form').hide(1);
             $('#thank-you').hide(1);
             $('#error').hide(1);
-            $('#interests').addClass('interests-background-gradient');
-            $('#home').removeClass('index-background-gradient', 100);
-            $('#resume').removeClass('resume-background-gradient', 100);
-            $('#code').removeClass('code-background-gradient', 100);
-            $('#contact-form').removeClass('contact-form-background-gradient', 100);
         });
     });
 
     $('#code-button').on('click', function() {
         $('#code').show(40, function() {
+            $('#home-button').removeClass('to-blue');
+            $('#resume-button').removeClass('to-blue');
+            $('#code-button').addClass('to-blue');
+            $('#interests-button').removeClass('to-blue');
+            $('#contact-form-button').removeClass('to-blue');
             $('#home').hide(1);
             $('#resume').hide(1);
             $('#interests').hide(1);
             $('#contact-form').hide(1);
             $('#thank-you').hide(1);
             $('#error').hide(1);
-            $('#code').addClass('code-background-gradient');
-            $('#home').removeClass('index-background-gradient', 100);
-            $('#resume').removeClass('resume-background-gradient', 100);
-            $('#interests').removeClass('interests-background-gradient', 100);
-            $('#contact-form').removeClass('contact-form-background-gradient', 100);
         });
     });
 
     $('#contact-form-button').on('click', function() {
         $('#contact-form').show(40, function() {
+            $('#home-button').removeClass('to-blue');
+            $('#resume-button').removeClass('to-blue');
+            $('#code-button').removeClass('to-blue');
+            $('#interests-button').removeClass('to-blue');
+            $('#contact-form-button').addClass('to-blue');
             $('#home').hide(1);
             $('#resume').hide(1);
             $('#code').hide(1);
             $('#interests').hide(1);
             $('#thank-you').hide(1);
             $('#error').hide(1);
-            $('#code').removeClass('code-background-gradient');
-            $('#home').removeClass('index-background-gradient', 100);
-            $('#resume').removeClass('resume-background-gradient', 100);
-            $('#interests').removeClass('interests-background-gradient', 100);
         });
     });
 

@@ -1,797 +1,666 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,500&display=swap);
 
 body {
- font-family: 'Ubuntu', sans-serif;
- display: flex;
- min-height: 100vh;
- flex-direction: column;
+    font-family: Ubuntu, sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column
 }
 
-/* background gradient to separate page sections*/
-
-.placeholder-background-gradient {
- /* background color gradient - follows scale of each container in the materialize row */
- background: linear-gradient(120deg, #636363, #6b6a6a, #3a3a3a);
- opacity: 1;
+.page-background {
+    background-color: #003246;
 }
 
-.index-background-gradient {
- /* background color gradient - follows scale of each container in the materialize row */
- background: linear-gradient(to right, #F5F5F5 16.599999%, white 0%);
+/* background color gradient - follows scale of each container in the materialize row */
+
+.main-background-gradient {
+    background: linear-gradient(to right, #0387B1 16.599999%, #fff 0)
 }
 
-.resume-background-gradient {
- /* background color gradient - follows scale of each container in the materialize row */
- background: linear-gradient(to right, #b10f58 16.599999%, white 0%);
-}
+/* main and section */
 
-.interests-background-gradient {
- /* background color gradient - follows scale of each container in the materialize row */
- background: linear-gradient(to right, #f44336 16.599999%, white 0%);
-}
-
-.code-background-gradient {
- /* background color gradient - follows scale of each container in the materialize row */
- background: linear-gradient(to right, #ff5722 16.599999%, white 0%);
-}
-
-
-/* main section */
 main {
- flex: 1 0 0;
+    flex: 1 0 0
 }
 
 section {
- flex: 1 0 0;
+    flex: 1 0 0
 }
 
+/* link mods */
+
+a {
+    color: #0387B1;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Colours */
+
+.blue {
+    background-color: #0387B1 !important;
+}
+
+.blue-grey {
+    background-color: #607d8b !important;
+}
+
+.blue-grey.to-blue {
+    background-color: #0387B1 !important;
+}
+
+.orange {
+    background-color: #E4491C !important;
+}
+
+/* main and section visibility */
+
 #home {
- display: block;
+    display: block
 }
 
 #resume {
- display: none;
+    display: none
 }
 
 #interests {
- display: none;
+    display: none
 }
 
 #code {
- display: none;
+    display: none
 }
 
 #contact-form {
- display: none;
+    display: none
 }
 
 #thank-you {
- display: none;
+    display: none
 }
 
 #error {
- display: none;
+    display: none
 }
 
-/* tooltips */
+/* tool and menu tips */
 
 .menutip {
- cursor: pointer;
- display: table;
- margin: 0;
+    cursor: pointer;
+    display: table;
+    margin: 0
 }
 
 .menutip .menutiptext {
- top: 0;
- left: 10px;
- color: #fff;
- position: absolute;
- z-index: 1;
- opacity: 0;
- transition: top 0.2s ease-in-out, opacity 0.2s ease-in;
+    top: 0;
+    left: 10px;
+    color: #fff;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    transition: top .2s ease-in-out, opacity .2s ease-in
 }
 
 .menutip .menutiptext-right {
- top: -3px;
- left: 120px;
- color: #fff;
- position: absolute;
- z-index: 1;
- opacity: 0;
- margin: 3px 0;
- transition: left 0.2s ease-in-out, opacity 0.2s ease-in;
+    top: -3px;
+    left: 120px;
+    color: #fff;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    margin: 3px 0;
+    transition: left .2s ease-in-out, opacity .2s ease-in
 }
 
 .menutip:hover .menutiptext {
- width: 100%;
- opacity: 1;
- top: 30px;
- margin: 3px 0;
+    width: 100%;
+    opacity: 1;
+    top: 30px;
+    margin: 3px 0
 }
 
 .menutip:hover .menutiptext-right {
- opacity: 1;
- left: 130px;
+    opacity: 1;
+    left: 130px
 }
 
 .tooltip {
- cursor: default;
- display: table;
- margin: 0 auto;
+    cursor: default;
+    display: table;
+    margin: 0 auto
 }
 
 .tooltip .tooltiptext {
- color: #fff;
- margin-left: 0;
- position: absolute;
- text-align: right;
- opacity: 0;
- transition: margin-left 0.2s ease-in-out, opacity 0.2s ease-in;
+    color: #fff;
+    margin-left: 0;
+    position: absolute;
+    text-align: right;
+    opacity: 0;
+    transition: margin-left .2s ease-in-out, opacity .2s ease-in
 }
 
 .tooltip:hover .tooltiptext {
- margin-left: 10px;
- opacity: 1;
+    margin-left: 10px;
+    opacity: 1
 }
 
-/* font mods */
+/* header, icon and font mods */
 
 h6 {
- font-size: 1.4rem;
+    font-size: 1.4rem
 }
 
 .icon-position {
- font-size: 1.4rem;
- line-height: 110%;
- margin: 0.7666666667rem 0 0.46rem 0;
+    font-size: 1.4rem;
+    line-height: 110%;
+    margin: .7666666667rem 0 .46rem 0
 }
 
 .larger-icon-position {
- font-size: 1.64rem;
- line-height: 110%;
- margin: 1.0933333333rem 0 0.656rem 0;
+    font-size: 1.64rem;
+    line-height: 110%;
+    margin: 1.0933333333rem 0 .656rem 0
 }
 
 .largest-icon-position {
- font-size: 2.28rem;
- line-height: 110%;
- margin: 1.52rem 0 0.912rem 0;
+    font-size: 2.28rem;
+    line-height: 110%;
+    margin: 1.52rem 0 .912rem 0
 }
 
 .text-center {
- text-align: center;
+    text-align: center
 }
 
 .image-logo {
- background: url("../../assets/images/head_shot.png");
- background-position: center;
- background-size: cover;
- min-height: 435px;
- background-repeat: no-repeat;
+    background: url(../../assets/images/head_shot.png);
+    background-position: center;
+    background-size: cover;
+    min-height: 435px;
+    background-repeat: no-repeat
 }
 
 .uppercase-menu {
- text-transform: uppercase;
- font-size: 14px;
+    text-transform: uppercase;
+    font-size: 14px
 }
 
 .content {
- padding: 0 18px;
- display: none;
- overflow: hidden;
- background-color: #f1f1f1;
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1
 }
 
-/* materialize mods */
+/* materlialize mods */
 
 .row {
- margin-bottom: 0;
+    margin-bottom: 0
 }
 
 .btn i {
- font-size: 25px;
- vertical-align: text-top;
+    font-size: 25px;
+    vertical-align: text-top
 }
 
 #middle {
- display: flex;
- height: 100vh;
- align-items: center;
+    display: flex;
+    height: 100vh;
+    align-items: center
 }
 
 #center-con {
- margin: 0 auto;
+    margin: 0 auto
 }
 
-input[type="text"]:not(.browser-default):focus:not([readonly]) {
- border-bottom: 1px solid #757575;
- box-shadow: 0 1px 0 0 #757575;
+/* materialize form mods */
+
+input[type=text]:not(.browser-default):focus:not([readonly]) {
+    border-bottom: 1px solid #757575;
+    box-shadow: 0 1px 0 0 #757575
 }
 
-input[type="text"]:not(.browser-default):focus:not([readonly])+label {
- color: #d7d6d6
+input[type=text]:not(.browser-default):focus:not([readonly])+label {
+    color: #d7d6d6
 }
 
-input[type="email"]:not(.browser-default):focus:not([readonly]) {
- border-bottom: 1px solid #757575;
- box-shadow: 0 1px 0 0 #757575;
+input[type=email]:not(.browser-default):focus:not([readonly]) {
+    border-bottom: 1px solid #757575;
+    box-shadow: 0 1px 0 0 #757575
 }
 
-input[type="email"]:not(.browser-default):focus:not([readonly])+label {
- color: #d7d6d6;
+input[type=email]:not(.browser-default):focus:not([readonly])+label {
+    color: #d7d6d6
 }
 
 textarea.materialize-textarea:focus:not([readonly]) {
- border-bottom: 1px solid #757575;
- box-shadow: 0 1px 0 0 #757575;
+    border-bottom: 1px solid #757575;
+    box-shadow: 0 1px 0 0 #757575
 }
 
 textarea.materialize-textarea:focus:not([readonly])+label {
- color: #d7d6d6;
+    color: #d7d6d6
 }
 
 .submit-button {
- background-color: #E68900;
- margin-bottom: 30px;
+    background-color: #e68900;
+    margin-bottom: 30px
 }
 
 .submit-button:hover {
- background-color: #E68900;
- filter: brightness(90%);
+    background-color: #e68900;
+    filter: brightness(90%)
 }
 
 .submit-button:focus {
- background-color: #E68900;
+    background-color: #e68900
 }
 
-/* timeline design */
+
+/* timeline Design */
 
 .timeline-background {
- background: linear-gradient(#fff, #fff) no-repeat 7px/2px 100%;
- height: 100%;
+    background: linear-gradient(#fff, #fff) no-repeat 7px/2px 100%;
+    height: 100%
 }
 
 .timeline-dot {
- font-size: 14px;
- line-height: 29px;
+    font-size: 14px;
+    line-height: 29px
 }
 
 .icon-transparent {
- color: transparent;
+    color: transparent
 }
 
 .row .col.no-left-padding p {
- margin: 0;
-
+    margin: 0
 }
 
 .work-title {
- margin: 0;
- padding-bottom: 7px;
+    margin: 0;
+    padding-bottom: 7px
 }
 
 .work-history {
- margin: 0;
- padding-bottom: 9px;
+    margin: 0;
+    padding-bottom: 9px
 }
 
 .work-date {
- margin: 0;
- padding-bottom: 9px;
- line-height: 0;
+    margin: 0;
+    padding-bottom: 9px;
+    line-height: 0
 }
 
 /* header adjustments */
 
 .row .col.white {
- padding-bottom: 20px;
+    padding-bottom: 20px
 }
 
 .row .col.last-line {
- padding-bottom: 20px;
+    padding-bottom: 20px
 }
 
 .row .image-logo {
- min-height: 360px;
+    min-height: 360px
 }
 
 /* navbar adjustments */
 
+.nav-bar {
+    box-shadow: 0 -1px 0 1px rgba(0, 0, 0, 0.14);
+}
+
 .row .nav-section {
- min-height: 284px;
+    min-height: 284px;
 }
 
 .menu-item {
- display: inherit;
- text-align: center;
- max-height: 40px;
+    display: inherit;
+    text-align: center;
+    max-height: 40px
 }
 
-/* nav-bar*/
-
 .nav-bar {
- height: auto;
- border-radius: 0;
- filter: brightness(100%);
- transition: filter .2s;
+    height: auto;
+    border-radius: 0;
+    filter: brightness(100%);
+    transition: filter .2s
 }
 
 .nav-bar:hover {
- filter: brightness(90%);
+    filter: brightness(90%)
 }
 
-/* fontawesome icon mods */
+/* fontawesome icons mods */
 
 .menu-item-fontawesome {
- padding-bottom: 3px;
+    padding-bottom: 3px
 }
 
 .row .col .social-button-effect {
- color: white;
+    color: #fff
 }
 
 .fa-2x {
- letter-spacing: 3px;
+    letter-spacing: 3px
 }
 
 .fas.fa-external-link-alt.right {
- font-size: 20px;
+    font-size: 20px
 }
 
 #menu-link {
- font-size: 20px;
+    font-size: 20px
 }
 
 .fas {
- /*-moz-osx-font-smoothing: none ;*/
- -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased
 }
 
-/* main section adjustments */
+/* main and section component tweaks */
 
 .row .col .icon-color {
- color: rgb(76, 175, 80);
+    color: #ff5722;
 }
 
 .row .col.no-left-padding {
- padding-left: 0.05rem;
+    padding-left: .05rem
 }
 
 .row .col .padding-bottom {
- padding-bottom: 15px;
+    padding-bottom: 15px
 }
 
 .section-header {
- text-transform: uppercase;
+    text-transform: uppercase
 }
 
 /* skills table design */
 
 .html {
- background: linear-gradient(to right, #4CAF50 95%, #BDBDBD 0%);
- margin: 3px 0;
- padding: 4px 0;
+    background: linear-gradient(to right, #bf360c 95%, #bdbdbd 0);
+    margin: 3px 0;
+    padding: 4px 0;
 }
 
 .css {
- background: linear-gradient(to right, #2196F3 90%, #BDBDBD 0%);
- margin: 3px 0;
- padding: 4px 0;
+    background: linear-gradient(to right, #d84315 90%, #bdbdbd 0);
+    margin: 3px 0;
+    padding: 4px 0;
 }
 
 .js {
- background: linear-gradient(to right, #E68900 85%, #BDBDBD 0%);
- margin: 3px 0;
- padding: 4px 0;
+    background: linear-gradient(to right, #e64a19 85%, #bdbdbd 0);
+    margin: 3px 0;
+    padding: 4px 0;
 }
 
 .python {
- background: linear-gradient(to right, #8C239E 70%, #BDBDBD 0%);
- margin: 3px 0;
- padding: 4px 0;
+    background: linear-gradient(to right, #ff8a65 70%, #bdbdbd 0);
+    margin: 3px 0;
+    padding: 4px 0;
 }
 
 .mat {
- background: linear-gradient(to right, #C2185B 95%, #BDBDBD 0%);
- margin: 3px 0;
- padding: 4px 0;
+    background: linear-gradient(to right, #bf360c 95%, #bdbdbd 0);
+    margin: 3px 0;
+    padding: 4px 0;
 }
 
 .django {
- background: linear-gradient(to right, #DC3C31 80%, #BDBDBD 0%);
- margin: 3px 0;
- padding: 4px 0;
+    background: linear-gradient(to right, #ff5722 80%, #bdbdbd 0);
+    margin: 3px 0;
+    padding: 4px 0;
 }
 
 .heroku {
- background: linear-gradient(to right, #795548 80%, #BDBDBD 0%);
- margin: 3px 0;
- padding: 4px 0;
+    background: linear-gradient(to right, #ff5722 80%, #bdbdbd 0);
+    margin: 3px 0;
+    padding: 4px 0;
 }
 
 .sql {
- background: linear-gradient(to right, #F57F17 70%, #BDBDBD 0%);
- margin: 3px 0;
- padding: 4px 0;
+    background: linear-gradient(to right, #ff8a65 70%, #bdbdbd 0);
+    margin: 3px 0;
+    padding: 4px 0;
 }
 
-/* social links hover effect */
+/* social links design */
 
 .social-button-effect {
- transition: transform .2s;
- margin-right: auto;
- margin-bottom: 5%;
- margin-left: auto;
+    transition: transform .2s;
+    margin-right: auto;
+    margin-bottom: 5%;
+    margin-left: auto
 }
 
 .social-button-effect:hover {
- transform: scale(1.2);
+    transform: scale(1.2)
 }
 
 .row .container .center {
- margin-left: 25%;
+    margin-left: 25%
 }
 
-/* sidenav style */
+/* sidenav design */
 
 .sidenav-button-effect {
- filter: brightness(100%);
- transition: filter .2s;
+    filter: brightness(100%);
+    transition: filter .2s
 }
 
 .sidenav-button-effect:hover {
- filter: brightness(90%);
+    filter: brightness(90%)
 }
 
 .row .col .sidenav-button-effect.btn {
- box-shadow: none;
- text-align: left;
+    box-shadow: none;
+    text-align: left
 }
 
-/* canvas style */
-
-#contact {
- border: none;
- padding-left: 0;
- padding-right: 0;
- margin-left: auto;
- margin-right: auto;
- max-width: 200px;
- max-height: 100px;
-}
-
-/* interests menu */
+/* interests menu display settings */
 
 #interest-one-show {
- display: block;
+    display: block
 }
 
 #interest-two-show {
- display: none;
+    display: none
 }
 
 #interest-three-show {
- display: none;
+    display: none
 }
 
-/* git repo display*/
+/* git repo display settings */
 
 #git-one-show {
- display: block;
+    display: block
 }
 
 #git-two-show {
- display: none;
+    display: none
 }
 
 #git-three-show {
- display: none;
+    display: none
 }
 
 #git-four-show {
- display: none;
+    display: none
 }
 
 /* media queries */
 
-@media only screen and (min-width: 20px) {
- .index-background-gradient {
-  background: linear-gradient(to bottom, #EEEEEE 55%, white 0%);
- }
+@media only screen and (min-width:20px) {
+    .main-background-gradient {
+        background: linear-gradient(to bottom, #0387B1 55%, #fff 0)
+    }
 
- .resume-background-gradient {
-  background: linear-gradient(to bottom, #b10f58 55%, white 0%);
- }
-
- .interests-background-gradient {
-  /* background color gradient - follows scale of each container in the materialize row */
-  background: linear-gradient(to bottom, #f44336 25%, white 0%);
- }
-
- .code-background-gradient {
-  /* background color gradient - follows scale of each container in the materialize row */
-  background: linear-gradient(to bottom, #ff5722 55%, white 0%);
- }
-
- .menu-item {
-  font-size: 12px;
- }
+    .menu-item {
+        font-size: 12px
+    }
 }
 
-@media only screen and (min-width: 601px) {
- .index-background-gradient {
-  background: linear-gradient(to bottom, #EEEEEE 40%, white 0%);
- }
+@media only screen and (min-width:601px) {
+    .main-background-gradient {
+        background: linear-gradient(to bottom, #0387B1 40%, #fff 0)
+    }
 
- .resume-background-gradient {
-  background: linear-gradient(to bottom, #b10f58 40%, white 0%);
- }
-
- .interests-background-gradient {
-  /* background color gradient - follows scale of each container in the materialize row */
-  background: linear-gradient(to bottom, #f44336 25%, white 0%);
- }
-
- .code-background-gradient {
-  /* background color gradient - follows scale of each container in the materialize row */
-  background: linear-gradient(to bottom, #ff5722 40%, white 0%);
- }
-
- .row .col.m2 {
-  width: 14.9999%;
- }
-
- .menu-item {
-  font-size: 14px;
- }
-
+    .row .col.m2 {
+        width: 14.9999%
+    }
+    .menu-item {
+        font-size: 14px
+    }
 }
 
-@media only screen and (max-width: 601px) {
- .row .nav-section {
-  min-height: 224px;
- }
+@media only screen and (max-width:601px) {
+    .row .nav-section {
+        min-height: 224px
+    }
+    .row .image-logo {
+        min-height: 300px
+    }
+    .row .col .white-text.mobile-title {
+        font-size: 2.56rem;
+        line-height: 110%
+    }
+    .row .col .white-text.mobile-subtitle {
+        font-size: 1.56rem;
+        line-height: 110%
+    }
+    .fa-2x {
+        font-size: 3em;
+        letter-spacing: 5px
+    }
 
- .row .image-logo {
-  min-height: 300px;
- }
+    .home-border {
+        border-right: none;
+    }
 
- .row .col .white-text.mobile-title {
-  font-size: 2.56rem;
-  line-height: 110%;
- }
+    .border-dark {
+        border-bottom: 1px solid #0387B1;
+    }
 
- .row .col .white-text.mobile-subtitle {
-  font-size: 1.56rem;
-  line-height: 110%;
- }
+    .border-dark-right {
+        border-right: 1px solid #0387B1;
+    }
 
- .fa-2x {
-  font-size: 3em;
-  letter-spacing: 5px;
- }
+    .bottom-border {
+        border-bottom: 1px solid #4b5d6b;
+    }
 }
 
-@media only screen and (min-width: 768px) {
- .index-background-gradient {
-  background: linear-gradient(to bottom, #EEEEEE 40%, white 0%);
- }
-
- .resume-background-gradient {
-  background: linear-gradient(to bottom, #b10f58 40%, white 0%);
- }
-
- .interests-background-gradient {
-  /* background color gradient - follows scale of each container in the materialize row */
-  background: linear-gradient(to bottom, #f44336 40%, white 0%);
- }
-
- .code-background-gradient {
-  /* background color gradient - follows scale of each container in the materialize row */
-  background: linear-gradient(to bottom, #ff5722 40%, white 0%);
- }
+@media only screen and (min-width:768px) {
+    .main-background-gradient {
+        background: linear-gradient(to bottom, #0387B1 40%, #fff 0)
+    }
 
 }
 
-@media only screen and (max-width: 993px) {
- .row .container .center {
-  margin-left: 0;
- }
-
- #contact {
-  max-width: 180px;
- }
+@media only screen and (max-width:993px) {
+    .row .container .center {
+        margin-left: 0
+    }
+    #contact {
+        max-width: 180px
+    }
 }
 
-@media only screen and (min-width: 993px) {
- .row .col.l3 {
-  width: 25%;
- }
-
- .row .col.l3.nav-bar {
-  width: 14.9999%
- }
-
- .index-background-gradient {
-  background: linear-gradient(to right, #EEEEEE 25%, white 0%);
- }
-
- .resume-background-gradient {
-  background: linear-gradient(to right, #b10f58 25%, white 0%);
- }
-
- .interests-background-gradient {
-  /* background color gradient - follows scale of each container in the materialize row */
-  background: linear-gradient(to right, #f44336 25%, white 0%);
- }
-
- .code-background-gradient {
-  /* background color gradient - follows scale of each container in the materialize row */
-  background: linear-gradient(to right, #ff5722 25%, white 0%);
- }
+@media only screen and (min-width:993px) {
+    .row .col.l3 {
+        width: 25%
+    }
+    .row .col.l3.nav-bar {
+        width: 14.9999%
+    }
+    .main-background-gradient {
+        background: linear-gradient(to right, #0387B1 25%, #fff 0)
+    }
 
 }
 
-@media only screen and (min-width: 1201px) {
- .index-background-gradient {
-  background: linear-gradient(to right, #EEEEEE 25%, white 0%);
- }
+@media only screen and (min-width:1201px) {
+    .main-background-gradient {
+        background: linear-gradient(to right, #0387B1 25%, #fff 0)
+    }
 
- .resume-background-gradient {
-  background: linear-gradient(to right, #b10f58 25%, white 0%);
- }
-
- .interests-background-gradient {
-  /* background color gradient - follows scale of each container in the materialize row */
-  background: linear-gradient(to right, #f44336 25%, white 0%);
- }
-
- .code-background-gradient {
-  /* background color gradient - follows scale of each container in the materialize row */
-  background: linear-gradient(to right, #ff5722 25%, white 0%);
- }
-
- .row .col.xl2 {
-  width: 25%;
- }
-
- .row .col.xl10 {
-  width: 75%;
- }
-
- .row .col.xl2.nav-bar {
-  width: 14.99%
- }
+    .row .col.xl2 {
+        width: 25%
+    }
+    .row .col.xl10 {
+        width: 75%
+    }
+    .row .col.xl2.nav-bar {
+        width: 14.99%
+    }
 }
 
-@media only screen and (min-width: 1336px) {
- .row .col.xl2 {
-  width: 20%;
- }
-
- .row .col.xl10 {
-  width: 80%;
- }
-
- .row .col.xl2.nav-bar {
-  width: 15.99%
- }
-
- .index-background-gradient {
-  background: linear-gradient(to right, #EEEEEE 20%, white 0%);
- }
-
- .resume-background-gradient {
-  background: linear-gradient(to right, #b10f58 20%, white 0%);
- }
-
- .interests-background-gradient {
-  /* background color gradient - follows scale of each container in the materialize row */
-  background: linear-gradient(to right, #f44336 20%, white 0%);
- }
-
- .code-background-gradient {
-  /* background color gradient - follows scale of each container in the materialize row */
-  background: linear-gradient(to right, #ff5722 20%, white 0%);
- }
+@media only screen and (min-width:1336px) {
+    .row .col.xl2 {
+        width: 20%
+    }
+    .row .col.xl10 {
+        width: 80%
+    }
+    .row .col.xl2.nav-bar {
+        width: 15.99%
+    }
+    .main-background-gradient {
+        background: linear-gradient(to right, #0387B1 20%, #fff 0)
+    }
 
 }
 
-@media only screen and (min-width: 1500px) {
- .row .col.xl2 {
-  width: 17%;
- }
-
- .row .col.xl10 {
-  width: 83%;
- }
-
- .row .col.xl2.nav-bar {
-  width: 16.599%
- }
-
- .index-background-gradient {
-  background: linear-gradient(to right, #EEEEEE 17%, white 0%);
- }
-
- .resume-background-gradient {
-  background: linear-gradient(to right, #b10f58 17%, white 0%);
- }
-
- .interests-background-gradient {
-  /* background color gradient - follows scale of each container in the materialize row */
-  background: linear-gradient(to right, #f44336 17%, white 0%);
- }
-
- .code-background-gradient {
-  /* background color gradient - follows scale of each container in the materialize row */
-  background: linear-gradient(to right, #ff5722 17%, white 0%);
- }
+@media only screen and (min-width:1500px) {
+    .row .col.xl2 {
+        width: 17%
+    }
+    .row .col.xl10 {
+        width: 83%
+    }
+    .row .col.xl2.nav-bar {
+        width: 16.599%
+    }
+    .main-background-gradient {
+        background: linear-gradient(to right, #0387B1 17%, #fff 0)
+    }
 
 }
 
-@media only screen and (min-width: 2000px) {
- .row .col.xl2 {
-  width: 15%;
- }
-
- .row .col.xl10 {
-  width: 85%;
- }
-
- .row .col.xl2.nav-bar {
-  width: 17%
- }
-
- .index-background-gradient {
-  background: linear-gradient(to right, #EEEEEE 15%, white 0%);
- }
-
- .resume-background-gradient {
-  background: linear-gradient(to right, #b10f58 15%, white 0%);
- }
-
- .interests-background-gradient {
-  /* background color gradient - follows scale of each container in the materialize row */
-  background: linear-gradient(to right, #f44336 15%, white 0%);
- }
-
- .code-background-gradient {
-  /* background color gradient - follows scale of each container in the materialize row */
-  background: linear-gradient(to right, #ff5722 15%, white 0%);
- }
-
+@media only screen and (min-width:2000px) {
+    .row .col.xl2 {
+        width: 15%
+    }
+    .row .col.xl10 {
+        width: 85%
+    }
+    .row .col.xl2.nav-bar {
+        width: 17%
+    }
+    .main-background-gradient {
+        background: linear-gradient(to right, #0387B1 15%, #fff 0)
+    }
 }
 
-@media only screen and (min-width: 2500px) {
- .row .col.xl2 {
-  width: 11%;
- }
-
- .row .col.xl10 {
-  width: 89%;
- }
-
- .row .col.xl2.nav-bar {
-  width: 17.799%
- }
-
- .index-background-gradient {
-  background: linear-gradient(to right, #EEEEEE 11%, white 0%);
- }
-
- .resume-background-gradient {
-  background: linear-gradient(to right, #b10f58 11%, white 0%);
- }
-
- .interests-background-gradient {
-  /* background color gradient - follows scale of each container in the materialize row */
-  background: linear-gradient(to right, #f44336 11%, white 0%);
- }
-
- .code-background-gradient {
-  /* background color gradient - follows scale of each container in the materialize row */
-  background: linear-gradient(to right, #ff5722 11%, white 0%);
- }
+@media only screen and (min-width:2500px) {
+    .row .col.xl2 {
+        width: 11%
+    }
+    .row .col.xl10 {
+        width: 89%
+    }
+    .row .col.xl2.nav-bar {
+        width: 17.799%
+    }
+    .main-background-gradient {
+        background: linear-gradient(to right, #0387B1 11%, #fff 0)
+    }
 
 }
