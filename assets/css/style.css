@@ -508,12 +508,6 @@ textarea.materialize-textarea:focus:not([readonly])+label {
     filter: brightness(90%)
 }
 
-@media (hover: none) and (pointer: coarse) {
-    .sidenav-button-effect:hover {
-        filter: brightness(100%);
-    }
-}
-
 .row .col .sidenav-button-effect.btn {
     box-shadow: none;
     text-align: left
