@@ -367,11 +367,10 @@ textarea.materialize-textarea:focus:not([readonly])+label {
     transition: filter .2s
 }
 
-@media(hover: hover) and (pointer: fine) {
-    .nav-bar:hover {
-        filter: brightness(90%);
-    }
+.nav-bar:hover {
+    filter: brightness(90%);
 }
+
 
 /* fontawesome icons mods */
 
