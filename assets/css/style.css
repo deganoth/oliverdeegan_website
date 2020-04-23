@@ -374,6 +374,13 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 @media (hover: none) and (pointer: coarse) {
     .nav-bar:hover {
         filter: brightness(100%);
+    }
+
+    .sidenav-button-effect:hover {
+        filter: brightness(100%);
+    }
+
+    .btn:hover {
         box-shadow: none;
     }
 }
@@ -499,6 +506,12 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 
 .sidenav-button-effect:hover {
     filter: brightness(90%)
+}
+
+@media (hover: none) and (pointer: coarse) {
+    .sidenav-button-effect:hover {
+        filter: brightness(100%);
+    }
 }
 
 .row .col .sidenav-button-effect.btn {
