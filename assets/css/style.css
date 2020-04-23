@@ -371,6 +371,13 @@ textarea.materialize-textarea:focus:not([readonly])+label {
     filter: brightness(90%);
 }
 
+@media (hover: none) and (pointer: coarse) {
+    .nav-bar:hover {
+        filter: brightness(100%);
+        box-shadow: none;
+    }
+}
+
 
 /* fontawesome icons mods */
 
