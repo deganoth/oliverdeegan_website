@@ -376,10 +376,6 @@ textarea.materialize-textarea:focus:not([readonly])+label {
         filter: brightness(100%);
     }
 
-    .sidenav-button-effect:hover {
-        filter: brightness(100%);
-    }
-
     .btn:hover {
         box-shadow: none;
     }
