@@ -271,6 +271,27 @@ textarea.materialize-textarea:focus:not([readonly])+label {
     background-color: #e68900
 }
 
+#thanks-modal {
+    display: none;
+    z-index: 1003;
+    opacity: 1;
+    top: 10%;
+    transform: scaleX(1) scaleY(1);
+}
+
+#error-modal {
+    display: none;
+    z-index: 1003;
+    opacity: 1;
+    top: 10%;
+    transform: scaleX(1) scaleY(1);
+}
+
+.modal-overlay {
+    z-index: 1002;
+    display: none;
+    opacity: 0.5;
+}
 
 /* timeline Design */
 
@@ -346,8 +367,14 @@ textarea.materialize-textarea:focus:not([readonly])+label {
     transition: filter .2s
 }
 
+.nav-bar:active {
+    filter: brightness(100%);
+    box-shadow: none;
+}
+
 .nav-bar:hover {
-    filter: brightness(90%)
+    filter: brightness(90%);
+    
 }
 
 /* fontawesome icons mods */
@@ -580,17 +607,17 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 
 @media only screen and (max-width:993px) {
     main {
-        -ms-flex: 1 0 0;
-        -webkit-flex: 1 0 0;
-        flex: 1 0 0;
+        -ms-flex: 1 0 auto;
+        -webkit-flex: 1 0 auto;
+        flex: 1 0 auto;
     }
 
     section {
-        -ms-flex: 1 0 0;
-        -webkit-flex: 1 0 0;
-        flex: 1 0 0;
+        -ms-flex: 1 0 auto;
+        -webkit-flex: 1 0 auto;
+        flex: 1 0 auto;
     }
-    
+
     .row .container .center {
         margin-left: 0
     }
