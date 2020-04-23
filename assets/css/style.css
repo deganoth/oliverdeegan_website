@@ -1,12 +1,19 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,500&display=swap);
 
+html,
+body {
+    height: 100%;
+}
+
 body {
     font-family: Ubuntu, sans-serif;
-    display: -ms-flexbox;
-    display: flex;
     min-height: 100vh;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
     -ms-flex-direction: column;
-    flex-direction: column
+    -webkit-flex-direction: column;
+    flex-direction: column;
 }
 
 .page-background {
@@ -22,13 +29,15 @@ body {
 /* main and section */
 
 main {
-    -ms-flex: 1 0 0;
-    flex: 1 0 0
+    -ms-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
 }
 
 section {
-    -ms-flex: 1 0 0;
-    flex: 1 0 0
+    -ms-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
 }
 
 /* link mods */
@@ -330,6 +339,7 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 }
 
 .nav-bar {
+    display: block;
     height: auto;
     border-radius: 0;
     filter: brightness(100%);
@@ -569,6 +579,18 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 }
 
 @media only screen and (max-width:993px) {
+    main {
+        -ms-flex: 1 0 0;
+        -webkit-flex: 1 0 0;
+        flex: 1 0 0;
+    }
+
+    section {
+        -ms-flex: 1 0 0;
+        -webkit-flex: 1 0 0;
+        flex: 1 0 0;
+    }
+    
     .row .container .center {
         margin-left: 0
     }
