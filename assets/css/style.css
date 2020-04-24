@@ -232,7 +232,8 @@ h6 {
 
 input[type=text]:not(.browser-default):focus:not([readonly]) {
     border-bottom: 1px solid #757575;
-    box-shadow: 0 1px 0 0 #757575
+    -webkit-box-shadow: 0 1px 0 0 #757575;
+    box-shadow: 0 1px 0 0 #757575;
 }
 
 input[type=text]:not(.browser-default):focus:not([readonly])+label {
@@ -241,6 +242,7 @@ input[type=text]:not(.browser-default):focus:not([readonly])+label {
 
 input[type=email]:not(.browser-default):focus:not([readonly]) {
     border-bottom: 1px solid #757575;
+    -webkit-box-shadow: 0 1px 0 0 #757575;
     box-shadow: 0 1px 0 0 #757575
 }
 
@@ -250,11 +252,25 @@ input[type=email]:not(.browser-default):focus:not([readonly])+label {
 
 textarea.materialize-textarea:focus:not([readonly]) {
     border-bottom: 1px solid #757575;
+    -webkit-box-shadow: 0 1px 0 0 #757575;
     box-shadow: 0 1px 0 0 #757575
 }
 
 textarea.materialize-textarea:focus:not([readonly])+label {
     color: #d7d6d6
+}
+
+input.invalid[type="text"]:not(.browser-default),
+input.invalid[type="text"]:not(.browser-default):focus,
+input.invalid[type="email"]:not(.browser-default),
+input.invalid[type="email"]:not(.browser-default):focus,
+textarea.materialize-textarea.invalid,
+textarea.materialize-textarea.invalid:focus,
+.select-wrapper.invalid>input.select-dropdown,
+.select-wrapper.invalid>input.select-dropdown:focus {
+    border-bottom: 1px solid #9E9E9E;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 
 .submit-button {
@@ -567,6 +583,11 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 }
 
 @media only screen and (max-width:601px) {
+    html,
+    body {
+        height: auto;
+    }
+
     .row .nav-section {
         min-height: 224px
     }
