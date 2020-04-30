@@ -5,7 +5,6 @@
 
 $(document).ready(function() {
    "use strict";
-   $('.collapsible').collapsible();
    M.updateTextFields();
-   M.textareaAutoResize($('#project_idea'));
+   M.textareaAutoResize($('#message'));
 });

@@ -8,19 +8,18 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="alternate stylesheet" href="assets/css/materialize.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     <link rel="shortcut icon" href="assets/images/cuboid_two.png" />
     <title>Oliver|Deegan</title>
 </head>
 
-<body class="page-background">
+<body>
 
     <!-- Header area including navbar -->
     <header>
         <div class="row">
             <a class="col xl2 l3 m3 s6 image-logo" href="index.html"></a>
-            <div class="col xl10 l9 m9 s6 nav-section">
+            <div class="col xl10 l9 m9 s6 nav-section page-background">
                 <h2 class="white-text mobile-title">Oliver Deegan</h2>
                 <h4 class="white-text mobile-subtitle">Full Stack Developer</h4>
             </div>
@@ -60,11 +59,11 @@
 
     <div class="modal-overlay"></div>
 
-    <!-- index content -->
-    <main id="home" class="main-background-gradient">
-        <div class="row">
+    <main>
+        <!-- home content -->
+        <div class="row full-height-row" id="home">
             <!-- Personal details -->
-            <div class="col xl2 l3 m12 s12 white-text blue waves-effect waves-light">
+            <div class="col xl2 l3 m12 s12 white-text blue full-height-col">
                 <h5>Personal Details</h5>
                 <div class="col s12 no-left-padding">
                     <h6>Name</h6>
@@ -94,7 +93,7 @@
                     </div>
                     <div class="col s11 no-left-padding">
                         <h6><span> What do I do?</span></h6>
-                        <p>I create web based solictions for complex problems. I focus on user experience, design efficiency and user security to create functional and aesthetically pleasing applications.</p>
+                        <p>I create web based solutions for complex problems. I focus on user experience, design efficiency and user security to create functional and aesthetically pleasing applications.</p>
                     </div>
                 </div>
                 <div class="col xl4 l12 m12 s12 no-left-padding">
@@ -108,14 +107,12 @@
                 </div>
             </div>
         </div>
-    </main>
 
-    <!-- resume content -->
-    <section id="resume" class="main-background-gradient">
-        <div class="row">
+        <!-- resume content -->
+        <div class="row full-height-row" id="resume">
 
             <!-- Experience  -->
-            <div class="col xl2 l3 m12 s12 white-text">
+            <div class="col xl2 l3 m12 s12 blue white-text full-height-col">
 
                 <!-- Work History -->
                 <div class="col xl12 l12 m6 s12 no-left-padding">
@@ -307,13 +304,11 @@
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- github content -->
-    <section id="code" class="main-background-gradient">
-        <div class="row">
+        <!-- github content -->
+        <div class="row full-height-row" id="code">
             <!-- Github menu -->
-            <div class="col xl2 l3 m12 s12 white-text blue">
+            <div class="col xl2 l3 m12 s12 white-text blue full-height-col">
                 <h5>Github Repos</h5>
                 <a href="#" class="white-text">
                     <div class="col s12 sidenav-button-effect btn blue" id="button-one">
@@ -367,7 +362,7 @@
                     <div class="col s11 no-left-padding">
                         <h6><span>How did I do it?</span></h6>
                         <p>
-                            I made use of the Sublime IDE, Windows 10 command prompt and an SQLite3 database for local build and testing. All assets were then migrated to Amazon S3 buckets and Heroku for app deployment with a PosgreSQL database addon.
+                            I made use of the Sublime IDE, Windows 10 command prompt and an SQLite3 database for local build and testing. All assets were then migrated to Amazon S3 buckets and Heroku for app deployment with a PostgreSQL database addon.
                         </p>
                     </div>
                 </div>
@@ -427,7 +422,7 @@
                     <div class="col s11 no-left-padding">
                         <h6><span>How did I do it?</span></h6>
                         <p>
-                            I made use of the Cloud9 IDE with MongoDB as the primary database for all builds and testing. All files were contained in a MongoDB collection accessed using the MongoDB URI connection string provided. The app was the deployed on Heroku and Github.
+                            I made use of the Cloud9 IDE with MongoDB as the primary database for all builds and testing. All files were contained in a MongoDB collection accessed using the MongoDB URI connection string provided. The app was deployed on Heroku and Github.
                         </p>
                     </div>
                 </div>
@@ -474,8 +469,8 @@
                     <div class="col s11 no-left-padding">
                         <h6><span>What is this?</span></h6>
                         <p>
-                            This is a mobile and desktop platforming game made using the Phaser 3 Javascript framework. It features an endless ascending platform style game where the player must accumulate sales while maintaining a healthy energy level. It's a fantasy example of
-                            working a retail environment. The project called for a game that challenged the user while still maintaining a fun experience.
+                            This is a mobile and desktop platforming game made using the Phaser 3 Javascript framework. It features an endless ascending platform style game where the player must accumulate sales while maintaining a healthy energy level. The project called for a
+                            game that challenged the user while still maintaining a fun experience.
                         </p>
                     </div>
                     <div class="col s1 no-left-padding">
@@ -510,13 +505,11 @@
             </div>
 
         </div>
-    </section>
 
-    <!-- interests content -->
-    <section id="interests" class="main-background-gradient">
-        <div class="row">
+        <!-- interests content -->
+        <div class="row full-height-row" id="interests">
             <!-- Interests menu -->
-            <div class="col xl2 l3 m12 s12 white-text blue">
+            <div class="col xl2 l3 m12 s12 white-text blue full-height-col">
                 <h5>Interests</h5>
                 <a href="#" class="white-text">
                     <div class="col s12 sidenav-button-effect btn blue" id="btn-one">
@@ -545,7 +538,7 @@
                     <div class="col s11 no-left-padding">
                         <h6><span>Platforms</span></h6>
                         <p>
-                            I took a Code Institute full stack developer bootcamp to bolster my web developer skills, and bring me up to date with current trends and practices.
+                            I keep up to date with current trends by taking courses on Udemy to keep my developer skills sharp.
                         </p>
                     </div>
                     <div class="col s1 no-left-padding">
@@ -566,7 +559,7 @@
                     <div class="col s11 no-left-padding">
                         <h6><span>Courses</span></h6>
                         <p>
-                            As part of my Codeinstitute diploma I was introduced to Phaser, a HTML5 and javascript based game delveopment framework. Much like flash, it allows for games to be rendered and played all in the web browser
+                            I completed the Code Institute Full Stack Developer Diploma. Its comprehensive content gave me an in depth understanding of web development trends and best practices.
                         </p>
                     </div>
                     <div class="col s1 no-left-padding">
@@ -640,7 +633,7 @@
                     <div class="col s11 no-left-padding">
                         <h6><span>Software</span></h6>
                         <p>
-                            I studied Music Production in college and have been working both professionally and as a hobbyist ever since. I work with bands, directors and game designers to design and polish their in project audio.
+                            I studied Music Production in college and have been working both professionally and as a hobbyist ever since. I work with musicians, directors and game designers to design and polish their in-project audio.
                         </p>
                     </div>
                     <div class="col s1 no-left-padding">
@@ -662,7 +655,7 @@
                     <div class="col s11 no-left-padding">
                         <h6><span>Audio in Games</span></h6>
                         <p>
-                            Through the School of Video Game Audio I learned in depth how to design and implement audio in a game environment. This required creation of non linear, multilayer audio to be triggered in different ways throught the chosen game project. I later took
+                            Through the School of Video Game Audio I learned in depth how to design and implement audio in a game environment. This required creation of non linear, multilayer audio to be triggered in different ways throughout the chosen game project. I later took
                             this knowledge and applied it to Fmod Studio, an alternative to Wwise.
                         </p>
                     </div>
@@ -680,11 +673,9 @@
             </div>
 
         </div>
-    </section>
 
-    <!-- contact -->
-    <section class="white" id="contact-form">
-        <div class="container">
+        <!-- contact -->
+        <div class="container full-height-row white" id="contact-form">
             <div class="row">
                 <!-- Contact  -->
                 <div class="col s12">
@@ -708,43 +699,43 @@
                             </div>
                         </div>
                         <div class="row">
+                            <div class="col s12 last-line g-recaptcha" data-sitekey="6LeeAe8UAAAAAFcpePf5fdLQ9VgTxM_lR_h9ARYk"></div>
                             <div class="col s12">
                                 <button class="btn waves-effect waves-light submit-button col xl2 l3 m3 s12 orange" type="submit" name="action">Send<i class="material-icons right">mail</i>
                             </button>
                             </div>
+
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- thanks modal -->
-    <section id="thanks-modal" class="modal open" tabindex="0">
-        <div class="modal-content">
-            <h4>Thanks</h4>
-            <p>Thanks for getting in touch!</p>
+        <!-- thanks modal -->
+        <div id="thanks-modal" class="modal open" tabindex="0">
+            <div class="modal-content">
+                <h4>Thanks</h4>
+                <p>Thanks for getting in touch!</p>
+            </div>
+            <div class="modal-footer">
+                <button class="modal-close waves-effect waves-blue btn-flat">Close</button>
+            </div>
         </div>
-        <div class="modal-footer">
-            <button id="modal-close" class="modal-close waves-effect waves-blue btn-flat">Close</a>
-        </div>
-    </section>
-    
-     <!-- error modal -->
-    <section id="error-modal" class="modal open" tabindex="0">
-        <div class="modal-content">
-            <h4>Error</h4>
-            <p>This contact form is not working, please use the mail icon at the page footer to get in touch. Apologies.</p>
-        </div>
-        <div class="modal-footer">
-            <button id="modal-close" class="modal-close waves-effect waves-blue btn-flat">Close</a>
-        </div>
-    </section>
 
+        <!-- error modal -->
+        <div id="error-modal" class="modal open" tabindex="0">
+            <div class="modal-content">
+                <h4>Error</h4>
+                <p>This contact form is not working, please use the mail icon at the page footer to get in touch. Apologies.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="modal-close waves-effect waves-blue btn-flat">Close</button>
+            </div>
+        </div>
+    </main>
 
-    <!-- Footer section -->
     <footer>
-        <div class="row">
+        <div class="row page-background">
             <div class="col xl10 l10 m9 s12">
                 <p class="white-text"><span>© 2020 Oliver Deegan</span></p>
             </div>
@@ -769,6 +760,7 @@
     <script src="assets/js/fade_in.js"></script>
     <script src="assets/js/email_in_footer.js"></script>
     <script src="assets/js/send_email.js"></script>
+    <!--<script src="https://www.google.com/recaptcha/api.js" async defer></script>-->
 </body>
 
 </html>

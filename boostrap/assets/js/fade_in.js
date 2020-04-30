@@ -5,6 +5,13 @@
 
 $(document).ready(function() {
     "use strict";
+    $('#code').hide(1);
+    $('#resume').hide(1);
+    $('#interests').hide(1);
+    $('#contact-form').hide(1);
+    $('#thank-you').hide(1);
+    $('#error').hide(1);
+    
     $('#home-button').on('click', function() {
         $('#home').show(1, function() {
             $('#home-button').addClass('to-blue');

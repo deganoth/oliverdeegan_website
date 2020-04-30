@@ -34,7 +34,7 @@ function sendMail(contactForm) {
     return false;
 }
 
-$('#modal-close').on('click', function() {
+$('.modal-close').on('click', function() {
     $('#error-modal').hide(1);
     $('#thanks-modal').hide(1);
     $('.modal-overlay').hide(1);

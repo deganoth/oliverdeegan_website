@@ -8,11 +8,13 @@
 $(document).ready(function() {
     "use strict";
     if ($(window).width() < 993) {
+        $('.full').removeClass('fill-height');
         $(".arrow").text("keyboard_arrow_down");
         $("#github-text").removeClass('menutiptext');
         $("#github-text").addClass('menutiptext-right');
     }
     else {
+        $('.full').addClass('fill-height');
         $(".arrow").text("keyboard_arrow_right");
         $("#github-text").addClass('menutiptext');
         $("#github-text").removeClass('menutiptext-right');
@@ -20,14 +22,17 @@ $(document).ready(function() {
     $(window).resize(function() {
 
         if ($(window).width() < 993) {
+            $('.full').removeClass('fill-height');
             $(".arrow").text("keyboard_arrow_down");
             $("#github-text").removeClass('menutiptext');
             $("#github-text").addClass('menutiptext-right');
         }
         else {
+            $('.full').addClass('fill-height');
             $(".arrow").text("keyboard_arrow_right");
             $("#github-text").addClass('menutiptext');
             $("#github-text").removeClass('menutiptext-right');
         }
     });
 });
+
