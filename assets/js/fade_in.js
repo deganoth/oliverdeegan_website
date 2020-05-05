@@ -128,7 +128,6 @@ $(document).ready(function() {
         $('#git-two-show').fadeOut(1, function() {
             $('#git-three-show').fadeIn(100);
             $('#git-one-show').fadeOut(1);
-
         });
     });
 });

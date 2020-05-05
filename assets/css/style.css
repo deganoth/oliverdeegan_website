@@ -56,6 +56,16 @@ a:hover {
     text-decoration: underline;
 }
 
+/* captcha mod */
+
+#cheeky {
+    position: absolute;
+    top: -500%;
+    bottom: 0;
+    right: 0;
+    left: -500%;
+}
+
 /* Colours */
 
 .blue {
@@ -356,6 +366,10 @@ textarea.materialize-textarea.invalid:focus,
 
 .row .col.white {
     padding-bottom: 20px
+}
+
+.last-line {
+    padding-top: 20px;
 }
 
 .row .col.last-line {

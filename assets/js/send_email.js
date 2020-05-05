@@ -6,11 +6,16 @@
 
 function sendMail(contactForm) {
     "use strict";
+    if ($('#cheeky').val().length != 0) {
+        return false;
+    }
     emailjs.send("gmail", "contact_form", {
             "full_name": contactForm.full_name.value,
             "email": contactForm.email.value,
             "message": contactForm.message.value,
+            "cheeky": contactForm.cheeky.value,
         })
+
         .then(
             function(response) {
                 console.log("Success", response);
@@ -33,6 +38,7 @@ function sendMail(contactForm) {
         );
     return false;
 }
+
 
 $('.modal-close').on('click', function() {
     $('#error-modal').hide(1);
