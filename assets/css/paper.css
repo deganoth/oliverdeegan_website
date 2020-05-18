@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+html {
+    height: 100%;
+    font-size: 11px;
+}
+
+@page {
+    size: letter;
+    margin: 0;
+    overflow: hidden;
+}
+
+@media print {
+    .button-download {
+        display: none;
+    }
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #9b9999;
+    height: 100%;
+    overflow: auto;
+}
+
+main {
+    background-color: white;
+    height: 295mm;
+    width: 210mm;
+    margin: 0 auto;
+}
+
+section {
+    background-color: white;
+    height: auto;
+    max-width: 210mm;
+    margin: 0 auto;
+}
+
+ul {
+    margin-top: 8px;
+    margin-bottom: auto;
+}
+
+.table-dot {
+    margin: 0;
+    line-height: 0;
+    position: relative;
+    top: -3px;
+}
+
+.container {
+    width: 100%;
+    /*text-align: justify;*/
+}
+
+.row .col {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+.row .col.s6 {
+    margin-right: auto;
+}
+
+.bottom {
+    position: relative;
+    z-index: 0;
+}
+
+.middle {
+    position: relative;
+    z-index: 1;
+}
+
+.top {
+    position: relative;
+    z-index: 10;
+    padding: 0 50px;
+    margin-top: -45px;
+}
+
+.low-opaque {
+    opacity: 0.5;
+}
+
+.negative-top-margin {
+    margin-top: -115px;
+}
+
+.zero-top-margin {
+    margin-top: 0;
+}
+
+.black-line {
+    background: linear-gradient(#000, #000) no-repeat 50%/4px 100%;
+}
+
+.bottom-border {
+    border-bottom: 3px solid black;
+    margin-bottom: 4px;
+}
+
+.bottom-border-light {
+    border-bottom: 1px solid black;
+    margin-bottom: 4px;
+}
+
+.top-border {
+    border-top: 3px solid black;
+    margin-top: 4px;
+}
+
+.small-bottom-margin {
+    margin-bottom: 10px;
+}
+
+.no-bottom-margin {
+    margin-bottom: 0;
+}
+
+.row .col.no-left-padding {
+    padding-left: 0;
+}
+
+.no-left-padding .col.s3 {
+    padding-left: 0;
+}
+
+.row .col.no-right-padding {
+    padding-right: 0;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.heading {
+    font-size: 1.4rem;
+    margin-top: 0;
+    display: block;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.sub-heading {
+    font-size: 1.2rem;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.icon-align {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.head-copy {
+    display: grid;
+    margin: 2.9733333333rem 0 1.424rem 0;
+}
+
+.text-orange {
+    color: #FF5722;
+    opacity: 0.7;
+}
+
+i.small-icon {
+    line-height: inherit;
+    font-size: 12.5px;
+    margin-right: 10px;
+}
+
+i.medium-icon {
+    line-height: inherit;
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+i.large-icon {
+    line-height: inherit;
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+.text-block {
+    display: block;
+}
+
+.left-border {
+    border-left: 1px solid black;
+}
+
+.row .col.dotted-bottom-border {
+    border-bottom: 1px dotted black;
+    padding-bottom: 10px;
+}
+
+.button-download {
+    position: absolute;
+    top: 0;
+}
+
+.button-download.below {
+    position: absolute;
+    top: 40px;
+}
+
+.button-download.print {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 0;
+}
+
+.button-website.print {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    margin-left: 0;
+}
+
+#cv {
+    display: none;
+}
+
+#menu-buttons {
+    display: none;
+}
+
+#cv-r {
+    display: block;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 601px) {
+    #cv-r .container .row.top {
+        padding: 5px;
+    }
+
+    .head-copy.mobile {
+        margin-top: 5px;
+    }
+
+    i.small-icon.mobile {
+        line-height: inherit;
+        font-size: 11.5px;
+        margin-right: 10px;
+    }
+
+    i.medium-icon.mobile {
+        line-height: inherit;
+        margin-right: 10px;
+        font-size: 1.35rem;
+    }
+
+    .row .col.s12.mobile {
+        display: grid;
+    }
+
+    .mobile-text {
+        display: none;
+    }
+
+    .button-download {
+        margin-left: 85px;
+    }
+
+    .button-download.below {
+        margin-left: 25px;
+        top: 0;
+    }
+
+    .btn .mobile-icon {
+        font-size: 2.2rem;
+        margin: 0 auto;
+    }
+}
